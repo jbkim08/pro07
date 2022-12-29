@@ -1,0 +1,27 @@
+package kr.go.msit.service;
+
+import java.util.List;
+
+import javax.inject.Inject;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpSession;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
+import org.springframework.stereotype.Service;
+
+import kr.go.msit.dto.MemberDTO;
+import kr.go.msit.model.MemberDAO;
+
+@Service
+public class MemberServiceImpl implements MemberService{
+	
+	@Autowired
+	MemberDAO memberDao;
+	
+	@Inject
+	BCryptPasswordEncoder pwdEncoder;
+
+
+
+}

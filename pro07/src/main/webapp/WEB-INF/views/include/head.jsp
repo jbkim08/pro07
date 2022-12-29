@@ -13,5 +13,5 @@
 <c:set var="path1" value="${pageContext.request.contextPath }" />
 
 <style>
-
+	.logo { width: 200px; }
 </style>

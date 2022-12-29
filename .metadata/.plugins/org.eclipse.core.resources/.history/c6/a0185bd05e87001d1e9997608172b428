@@ -1,0 +1,5 @@
+package kr.go.msit.model;
+
+public interface BoardDAO {
+
+}

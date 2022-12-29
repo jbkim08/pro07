@@ -1,0 +1,11 @@
+package kr.go.msit.service;
+
+import kr.go.msit.dto.MemberDTO;
+
+public interface MemberService {
+	public MemberDTO getMember(String id) throws Exception;
+	public void memberInsert(MemberDTO dto) throws Exception;
+	public MemberDTO signIn(MemberDTO mdto) throws Exception;
+
+
+}

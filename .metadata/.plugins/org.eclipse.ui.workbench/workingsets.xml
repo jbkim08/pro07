@@ -8,4 +8,5 @@
 <item elementID="=pro07/src\/test\/java=/test=/true=/=/optional=/true=/=/maven.pomderived=/true=/" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
 <item elementID="=pro07/src\/test\/resources=/test=/true=/=/maven.pomderived=/true=/" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
 </workingSet>
+<workingSet aggregate="true" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1672299833619_2" label="Window Working Set" name="Aggregate for window 1672299833618"/>
 </workingSetManager>

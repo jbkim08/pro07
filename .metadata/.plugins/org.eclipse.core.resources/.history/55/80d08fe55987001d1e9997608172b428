@@ -1,0 +1,12 @@
+package kr.go.msit.model;
+
+
+
+import kr.go.msit.dto.MemberDTO;
+
+public interface MemberDAO {
+	public MemberDTO getMember(String id) throws Exception;
+	public void memberInsert(MemberDTO dto) throws Exception;	
+
+
+}
