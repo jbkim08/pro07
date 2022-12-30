@@ -33,5 +33,17 @@ public class MemberDAOImpl implements MemberDAO{
 	@Override public MemberDTO signIn(MemberDTO mdto) throws Exception {
 		return sqlSession.selectOne("member.signIn", mdto); 
 	}	
+	
+	//회원 정보 변경
+	@Override
+	public void memberUpdate(MemberDTO mdto) throws Exception {
+		sqlSession.update("member.memberUpdate", mdto);
+	}
+	
+	//회원 탈퇴
+	@Override
+	public void memberDelete(String id) throws Exception {
+		sqlSession.delete("member.memberDelete", id);
+	}	
 
 }

@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 36 36">
+    <g transform="translate(2916 -10012)">
+        <circle data-name="타원 6" cx="18" cy="18" r="18" transform="translate(-2916 10012)" style="fill:#505050"/>
+        <path data-name="패스 57" d="M0 0h24.4v24.4H0z" style="fill:none" transform="translate(-2910.052 10017.948)"/>
+        <path data-name="패스 58" d="M14.117 13.693h2.542l1.017-4.067h-3.559V7.592c0-1.047 0-2.034 2.034-2.034h1.525V2.142A28.638 28.638 0 0 0 14.771 2a4.409 4.409 0 0 0-4.721 4.779v2.847H7v4.067h3.05v8.642h4.067z" transform="translate(-2909.935 10017.982)" style="fill:#b7b7b7"/>
+    </g>
+</svg>

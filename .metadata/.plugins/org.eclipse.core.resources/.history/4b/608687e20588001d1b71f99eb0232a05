@@ -1,0 +1,5 @@
+package kr.go.msit.service;
+
+public class FreeServiceImpl {
+
+}

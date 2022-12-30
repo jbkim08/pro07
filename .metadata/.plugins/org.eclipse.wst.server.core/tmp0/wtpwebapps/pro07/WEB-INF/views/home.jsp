@@ -29,13 +29,17 @@
 	<!-- 헤더 부분 인클루드 -->
 	<jsp:include page="include/header.jsp"></jsp:include>
 </header>
-	
-<img alt="" src="${path1 }/resources/data/main.jpg">
+
+<div class="container">
+	<img alt="" src="${path1 }/resources/data/main.jpg">
+</div>
+
 
 <footer id="footer">
 	<!-- 푸터 부분 인클루드 -->
 	<jsp:include page="include/footer.jsp"></jsp:include>
 </footer> 
+
 
 </body>
 </html>

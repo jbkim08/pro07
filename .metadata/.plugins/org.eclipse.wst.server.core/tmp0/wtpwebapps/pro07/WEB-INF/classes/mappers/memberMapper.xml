@@ -22,6 +22,17 @@
 	<insert id="memberInsert">
 		insert into member values (#{id}, #{pw}, #{name}, #{email}, #{tel}, #{addr1}, #{addr2}, #{postcode}, now(), #{birth}, 0, 0)
 	</insert>
+	
+	<!-- 회원 정보 변경 : dao에서 update("member.memberUpdate", mdto) -->
+	<update id="memberUpdate">
+	update member set pw=#{pw }, name=#{name }, email=#{email }, tel=#{tel }, 
+	addr1=#{addr1 }, addr2=#{addr2 }, postcode=#{postcode } where id = #{id }
+	</update>
+	
+	<!-- 회원 탈퇴 : dao에서 delete("member.memberDelete", userid) -->	
+	<delete id="memberDelete">
+	delete from member where id=#{id }	
+	</delete>	
 
 	
 </mapper>

@@ -46,6 +46,23 @@ public class MemberController {
 		return "member/memberList";
 	}
 	
+	/* 관리자 회원 정보 보기 */
+	@RequestMapping(value="getMember.do", method = RequestMethod.GET)
+	public String getMember(@RequestParam String id, Model model) throws Exception {
+		MemberDTO member = memberService.getMember(id);
+		model.addAttribute("member", member);
+		return "member/memberDetail";
+	}
+	
+	
+	/* 일반회원 정보보기 */
+	@RequestMapping(value="read.do", method = RequestMethod.GET)
+	public String memberRead(Model model, HttpServletRequest request) throws Exception{
+		String id = (String)session.getAttribute("sid");
+		MemberDTO member = memberService.getMember(id);
+		model.addAttribute("member", member);
+		return "member/memberRead";
+	}	
 	
 	//회원 가입 - 약관 동의 페이지 로딩
 	@GetMapping("agree.do")
@@ -112,6 +129,30 @@ public class MemberController {
 			return "redirect:loginForm.do";
 		}
 	} 
+	
+	//회원 정보 변경
+	@RequestMapping(value="update.do", method = RequestMethod.POST)
+	public String memberUpdate(MemberDTO mdto, Model model) throws Exception {
+		String pwd = pwdEncoder.encode(mdto.getPw());
+		mdto.setPw(pwd);
+		memberService.memberUpdate(mdto);
+		return "redirect:/";
+	}
+	
+	//회원 탈퇴
+	@RequestMapping(value="delete.do", method = RequestMethod.GET)
+	public String memberDelete(@RequestParam String id, Model model, HttpSession session) throws Exception {
+		memberService.memberDelete(id);
+		session.invalidate();
+		return "redirect:/";
+	}
+	
+	//강퇴
+	@RequestMapping(value="delete2.do", method = RequestMethod.GET)
+	public String memberDeleteAdmin(@RequestParam String id, Model model, HttpSession session) throws Exception {
+		memberService.memberDelete(id);
+		return "redirect:/";
+	}
 	
 	//로그아웃
 	@RequestMapping("logout.do")

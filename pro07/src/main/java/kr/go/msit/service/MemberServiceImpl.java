@@ -41,5 +41,15 @@ public class MemberServiceImpl implements MemberService{
 	public MemberDTO signIn(MemberDTO mdto) throws Exception {
 		return memberDao.signIn(mdto);
 	}	
+	
+	@Override
+	public void memberUpdate(MemberDTO mdto) throws Exception {
+		memberDao.memberUpdate(mdto);
+	}
+
+	@Override
+	public void memberDelete(String id) throws Exception {
+		memberDao.memberDelete(id);
+	}
 
 }

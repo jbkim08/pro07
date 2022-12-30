@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30">
+    <defs>
+        <linearGradient id="hbkzkongua" x1=".907" y1=".948" x2="-.081" y2=".165" gradientUnits="objectBoundingBox">
+            <stop offset="0" stop-color="#b2435e"/>
+            <stop offset="1" stop-color="#574584"/>
+        </linearGradient>
+    </defs>
+    <path data-name="사각형 24721" style="fill:none" d="M0 0h30v30H0z"/>
+    <path data-name="사각형 25065" transform="translate(17 6)" style="fill:url(#hbkzkongua)" d="M0 0h7v7H0z"/>
+    <g data-name="사각형 25062" style="stroke:#441d6a;stroke-width:5px;fill:none">
+        <path style="stroke:none" d="M0 0h15v15H0z" transform="translate(6 9)"/>
+        <path style="fill:none" d="M2.5 2.5h10v10h-10z" transform="translate(6 9)"/>
+    </g>
+</svg>

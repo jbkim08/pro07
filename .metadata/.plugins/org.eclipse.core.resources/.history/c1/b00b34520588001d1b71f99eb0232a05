@@ -1,0 +1,5 @@
+package kr.go.msit.dto;
+
+public class FreeDTO {
+
+}

@@ -13,5 +13,8 @@
 <c:set var="path1" value="${pageContext.request.contextPath }" />
 
 <style>
+	body { width: 1600px; margin: 0 auto; }
 	.logo { width: 200px; }
+	.container { width: 1500px; min-height: 580px; margin: 0 auto; padding-top: 45px; padding-bottom: 50px;}
+	
 </style>

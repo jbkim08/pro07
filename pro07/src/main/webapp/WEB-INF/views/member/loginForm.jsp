@@ -57,7 +57,7 @@
 			</tbody>
 		</table>
 		<div class="btn-group">
-			<input type="submit" name="submit-btn" class="btn btn-info" value="회원가입">
+			<input type="submit" name="submit-btn" class="btn btn-info" value="로그인">
 			<input type="reset" name="reset-btn" class="btn btn-info" value="취소">
 		</div>
 	</form>	

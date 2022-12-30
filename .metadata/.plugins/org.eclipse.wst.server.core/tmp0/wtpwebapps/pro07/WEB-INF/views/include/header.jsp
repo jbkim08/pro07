@@ -22,11 +22,11 @@
 		국민참여
         </a>
         <div class="dropdown-menu">
-          <a class="dropdown-item" href="#">제도소개</a>
-          <a class="dropdown-item" href="#">지원센터</a>
-          <a class="dropdown-item" href="#">규제신문고</a>
-          <a class="dropdown-item" href="#">규제입증요청</a>
-          <a class="dropdown-item" href="#">민원신고</a>
+          <a class="dropdown-item" href="${path1 }/resources/menua/a-1.jsp">제도소개</a>
+          <a class="dropdown-item" href="${path1 }/resources/menua/a-2.jsp">지원센터</a>
+          <a class="dropdown-item" href="${path1 }/resources/menua/a-3.jsp">규제신문고</a>
+          <a class="dropdown-item" href="${path1 }/resources/menua/a-4.jsp">규제입증요청</a>
+          <a class="dropdown-item" href="${path1 }/free/list.do">민원신고</a>
         </div>
       </li> 
       <li class="nav-item dropdown">
@@ -34,11 +34,11 @@
 		정보공개
         </a>
         <div class="dropdown-menu">
-          <a class="dropdown-item" href="#">정보공개제도안내</a>
-          <a class="dropdown-item" href="#">정보목록</a>
-          <a class="dropdown-item" href="#">사전정보공표</a>
-          <a class="dropdown-item" href="#">반부패청렴자료</a>
-          <a class="dropdown-item" href="#">공공데이터개방</a>
+          <a class="dropdown-item" href="${path1 }/resources/menub/b-1.jsp">정보공개제도안내</a>
+          <a class="dropdown-item" href="${path1 }/resources/menub/b-2.jsp">정보목록</a>
+          <a class="dropdown-item" href="${path1 }/resources/menub/b-3.jsp">사전정보공표</a>
+          <a class="dropdown-item" href="${path1 }/resources/menub/b-4.jsp">반부패청렴자료</a>
+          <a class="dropdown-item" href="${path1 }/resources/menub/b-5.jsp">공공데이터개방</a>
         </div>
       </li>  
       <li class="nav-item dropdown">
@@ -46,11 +46,11 @@
 		소식
         </a>
         <div class="dropdown-menu">
-          <a class="dropdown-item" href="#">포토뉴스</a>
-          <a class="dropdown-item" href="#">카드뉴스</a>
+          <a class="dropdown-item" href="${path1 }/resources/menuc/c-1.jsp">포토뉴스</a>
+          <a class="dropdown-item" href="${path1 }/resources/menuc/c-2.jsp">카드뉴스</a>
           <a class="dropdown-item" href="${path1 }/board/list.do">공지사항</a>
-          <a class="dropdown-item" href="#">사업공고</a>
-          <a class="dropdown-item" href="#">모집채용</a>
+          <a class="dropdown-item" href="${path1 }/resources/menuc/c-3.jsp">사업공고</a>
+          <a class="dropdown-item" href="${path1 }/resources/menuc/c-4.jsp">모집채용</a>
         </div>
       </li>     
       <li class="nav-item dropdown">
@@ -58,9 +58,9 @@
 		정책·통계
         </a>
         <div class="dropdown-menu">
-          <a class="dropdown-item" href="#">국정과제</a>
-          <a class="dropdown-item" href="#">업무계획</a>
-          <a class="dropdown-item" href="#">예산</a>
+          <a class="dropdown-item" href="${path1 }/resources/menud/d-1.jsp">국정과제</a>
+          <a class="dropdown-item" href="${path1 }/resources/menud/d-2.jsp">업무계획</a>
+          <a class="dropdown-item" href="${path1 }/resources/menud/d-3.jsp">예산</a>
         </div>
       </li>  
       <li class="nav-item dropdown">
