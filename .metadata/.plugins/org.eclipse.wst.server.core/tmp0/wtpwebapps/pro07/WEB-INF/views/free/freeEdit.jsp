@@ -17,6 +17,7 @@
 
 
 <jsp:include page="../include/head.jsp"></jsp:include>
+<script type="text/javascript" src="${path1 }/resources/ckeditor/ckeditor.js"></script>
 <!-- header css -->
 <style>
 
@@ -49,7 +50,11 @@
 				</tr>
 				<tr>
 					<th>작성자</th>
-					<td><input type="text" name="author" id="author" value="admin" class="form-control" readonly></td>
+					<td><input type="text" name="author" id="author" value="admin" class="form-control" readonly>
+      				<script>
+      				CKEDITOR.replace('content',	{filebrowserUploadUrl:'${path1 }/free/imageUpload.do'});
+      				</script>					
+					</td>
 				</tr>
 			</tbody>
 		</table>

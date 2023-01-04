@@ -61,7 +61,7 @@
 		</tbody>
 	</table>
 	<div class="btn-group">
-		<a href="${path1 }/board/list.dol" class="btn btn-info">목록으로</a>
+		<a href="${path1 }/board/list.do" class="btn btn-info">목록으로</a>
 		<%-- <% if(sid.equals("admin")) { %> --%>
 		<a href="${path1 }/board/delete.do?seq=${dto.seq}" class="btn btn-info">글 삭제</a>
 		<a href="${path1 }/board/edit.do?seq=${dto.seq}" class="btn btn-info">글 수정</a>

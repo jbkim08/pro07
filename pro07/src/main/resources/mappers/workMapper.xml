@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="work">
+	<!-- 공지사항 목록 -->
+	<select id="workList" resultType="kr.go.msit.dto.WorkDTO">
+		select * from work order by regdate desc
+	</select>
+	<!-- 글 상세보기 -->
+	<select id="workDetail" resultType="kr.go.msit.dto.WorkDTO">
+		select * from work where seq=#{seq}
+	</select>
+	<!-- 글 수 카운트 -->
+	<select id="totalCount" resultType="integer" >
+		select count(*) from work
+	</select>
+
+	<insert id="workInsert">
+		insert into work values ((select ifnull(max(seq), 0)+1 from work a), #{title}, #{content}, 'admin', now(), 0)
+	</insert>
+	<delete id="workDelete">
+		delete from work where seq=#{seq}
+	</delete>
+	<update id="workEdit">
+		update work set title=#{title}, content=#{content} where seq=#{seq}
+	</update>
+	<update id="countUp">
+		update work set visited=visited+1 where seq=#{seq}
+	</update>
+
+</mapper>

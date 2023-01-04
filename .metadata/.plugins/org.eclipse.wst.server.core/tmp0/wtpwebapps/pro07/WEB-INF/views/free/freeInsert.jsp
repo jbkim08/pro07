@@ -17,6 +17,7 @@
 
 
 <jsp:include page="../include/head.jsp"></jsp:include>
+<script type="text/javascript" src="${path1 }/resources/ckeditor/ckeditor.js"></script>
 <!-- header css -->
 <style>
 
@@ -42,12 +43,16 @@
 				</tr>
 				<tr>
 					<th>내용</th>
-					<td><textarea name="content" id="content" class="form-control" placeholder="내용 입력" rows="8" cols="100" maxlength="800" required></textarea></td>
+					<td><textarea name="content" id="content" class="form-control" placeholder="내용 입력" rows="8" cols="100" maxlength="800" required></textarea>
+      				<script>
+      				CKEDITOR.replace('content',	{filebrowserUploadUrl:'${path1 }/free/imageUpload.do'});
+      				</script>					
+					</td>
 				</tr>	
-<%-- 				<tr>
+ 				<tr>
 					<th>작성자</th>
-					<td><input type="text" name="sid" id="sid" class="form-control" value="${sid }" readonly required></td>
-				</tr>	 --%>					
+					<td><input type="text" name="id" id="id" class="form-control" value="${sid }" readonly required></td>
+				</tr>					
 			</tbody>
 		</table>
 		<div class="btn-group">

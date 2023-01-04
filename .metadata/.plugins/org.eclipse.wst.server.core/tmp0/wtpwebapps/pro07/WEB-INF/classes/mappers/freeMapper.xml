@@ -17,7 +17,7 @@
 	</select>
 
 	<insert id="freeInsert">
-		insert into free values ((select ifnull(max(bno), 0)+1 from free b), #{title}, #{content}, now(), 0, 'admin', 0)	
+		insert into free values ((select ifnull(max(bno), 0)+1 from free b), #{title}, #{content}, now(), 0, #{id}, 0)	
 	</insert>
 	
 	<delete id="freeDelete">

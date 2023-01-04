@@ -8,7 +8,7 @@
 <%@ page import="java.text.*, java.net.InetAddress"%>
 <c:set var="path1" value="${pageContext.request.contextPath }" />
 
-<footer class="container-fluid" id="footer">
+<footer class="footer-container-fluid " id="footer">
 	<div class="in_container">
 		<nav class="nav">
 			<div class="btn-group dropup">
@@ -54,15 +54,15 @@
 			</div>	  
 
 		</nav>		
-		<div class="card">
+		<div class="card" id="footercard">
 		<nav class="nav">
 		  <a class="nav-link active" href="#">개인정보처리방침</a>
 		  <a class="nav-link" href="#">저작권 정책</a>
 		  <a class="nav-link" href="#">RSS이용안내</a>
 		  <a class="nav-link" href="#">오시는길</a>
 		  <a class="nav-link" href="#">RSS과기정통부 도서관</a>
-		</nav>		  
-		<ul class="nav justify-content-end">
+		  
+		  <ul class="nav justify-content-end">
 		  <li class="nav-item">
 		    <a class="nav-link active" href="#"><img alt="" src="${path1 }/resources/data/facebook.svg"></a>
 		  </li>
@@ -77,12 +77,13 @@
 		  </li>
 		  <li class="nav-item">
 		    <a class="nav-link" href="#"><img alt="" src="${path1 }/resources/data/youtube.svg"></a>
-		  </li>		  		  
-
-		</ul>		  
+		  </li>
+		  </ul>		  
+		</nav>		  
+				  
 
 		
-		  <div class="card-body">
+		  <div class="card-body" id="footercardbody">
 			<div class="media">
 			  <img src="${path1 }/resources/data/foot_logo.svg" class="mr-3" alt="...">
 			  <div class="media-body">

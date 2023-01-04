@@ -1,0 +1,14 @@
+package kr.go.msit.service;
+
+import java.util.List;
+
+import kr.go.msit.dto.WorkDTO;
+
+public interface BoardService2 {
+	public List<WorkDTO> boardList() throws Exception;
+	public WorkDTO boardDetail(int seq) throws Exception;
+	public void boardInsert(WorkDTO dto) throws Exception;
+	public void boardDelete(int seq) throws Exception;
+	public void boardEdit(WorkDTO dto) throws Exception;
+
+}

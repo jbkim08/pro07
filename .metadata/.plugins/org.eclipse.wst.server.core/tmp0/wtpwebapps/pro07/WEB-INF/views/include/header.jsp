@@ -49,8 +49,8 @@
           <a class="dropdown-item" href="${path1 }/resources/menuc/c-1.jsp">포토뉴스</a>
           <a class="dropdown-item" href="${path1 }/resources/menuc/c-2.jsp">카드뉴스</a>
           <a class="dropdown-item" href="${path1 }/board/list.do">공지사항</a>
-          <a class="dropdown-item" href="${path1 }/resources/menuc/c-3.jsp">사업공고</a>
-          <a class="dropdown-item" href="${path1 }/resources/menuc/c-4.jsp">모집채용</a>
+          <a class="dropdown-item" href="${path1 }/work/list.do">사업공고</a>
+          <a class="dropdown-item" href="${path1 }/hire/list.do">모집채용</a>
         </div>
       </li>     
       <li class="nav-item dropdown">
@@ -68,9 +68,9 @@
 		법령
         </a>
         <div class="dropdown-menu">
-          <a class="dropdown-item" href="#">과학기술</a>
-          <a class="dropdown-item" href="#">정보방송통신</a>
-          <a class="dropdown-item" href="#">우정</a>
+          <a class="dropdown-item" href="${path1 }/resources/menue/e-1.jsp">과학기술</a>
+          <a class="dropdown-item" href="${path1 }/resources/menue/e-2.jsp">정보방송통신</a>
+          <a class="dropdown-item" href="${path1 }/resources/menue/e-3.jsp">우정</a>
         </div>
       </li>  
       <li class="nav-item dropdown">
@@ -78,15 +78,17 @@
 		기관소개
         </a>
         <div class="dropdown-menu">
-          <a class="dropdown-item" href="#">장관소개</a>
-          <a class="dropdown-item" href="#">소관업무</a>
-          <a class="dropdown-item" href="#">MI소개</a>
-          <a class="dropdown-item" href="#">조직도</a>
-          <a class="dropdown-item" href="#">오시는길</a>
+          <a class="dropdown-item" href="${path1 }/resources/menuf/f-1.jsp">장관소개</a>
+          <a class="dropdown-item" href="${path1 }/resources/menuf/f-2.jsp">소관업무</a>
+          <a class="dropdown-item" href="${path1 }/resources/menuf/f-3.jsp">MI소개</a>
+          <a class="dropdown-item" href="${path1 }/resources/menuf/f-4.jsp">조직도</a>
+          <a class="dropdown-item" href="${path1 }/resources/menuf/f-5.jsp">오시는길</a>
         </div>
-      </li>                                   
+      </li>         
+      
+                   
       <c:if test="${empty sid }">
-      <li class="nav-item">
+      <li class="nav-item" id="right">
         <a class="nav-link" href="${path1 }/member/loginForm.do">로그인</a>
       </li>
       <li class="nav-item">      
@@ -94,7 +96,7 @@
       </li>
       </c:if>
       <c:if test="${not empty sid }">  
-      <li class="nav-item">      
+      <li class="nav-item" id="right">      
       	<a class="nav-link" href="${path1 }/member/logout.do">로그아웃</a>
       </li>
       <li class="nav-item">           	
@@ -105,13 +107,10 @@
       <li class="nav-item">          
         <a class="nav-link" href="${path1 }/member/list.do">관리자 페이지</a>
       </li>             
-      </c:if> 
+      </c:if>  
       
-    </ul>
-    <form class="form-inline my-2 my-lg-0">
-      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-    </form>
+    </ul>  
+    
   </div>
 </nav>
 

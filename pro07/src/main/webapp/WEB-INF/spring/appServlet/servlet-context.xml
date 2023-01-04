@@ -27,6 +27,8 @@
 	<resources mapping="/board/**" location="/WEB-INF/views/board" />
 	<resources mapping="/member/**" location="/WEB-INF/views/member" />
 	<resources mapping="/free/**" location="/WEB-INF/views/free" />		
+	<resources mapping="/work/**" location="/WEB-INF/views/work" />
+	<resources mapping="/hire/**" location="/WEB-INF/views/hire" />				
 	
 
 	<!-- Resolves views selected for rendering by @Controllers to .jsp resources in the /WEB-INF/views directory -->

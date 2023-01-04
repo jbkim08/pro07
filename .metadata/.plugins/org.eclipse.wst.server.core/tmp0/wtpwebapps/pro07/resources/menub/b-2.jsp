@@ -133,7 +133,7 @@
 		      <div class="card-body">
 		        <h6 class="card-title">
 			        <a href="https://www.msit.go.kr/ssm/file/contentsFileDown.do?seqEncpt=8">
-			        2011정보목록 다운로드  <img alt="" src="${path1 }/resources/data/download_black.svg">
+			        2011 정보목록 다운로드  <img alt="" src="${path1 }/resources/data/download_black.svg">
 			        </a>			        
 		        </h6>
 		      </div>
@@ -144,7 +144,7 @@
 		      <div class="card-body">
 		        <h6 class="card-title">
 			        <a href="https://www.msit.go.kr/ssm/file/contentsFileDown.do?seqEncpt=9">
-			        2012정보목록 다운로드  <img alt="" src="${path1 }/resources/data/download_black.svg">
+			        2012 정보목록 다운로드  <img alt="" src="${path1 }/resources/data/download_black.svg">
 			        </a>			        
 		        </h6>
 		      </div>
@@ -155,7 +155,7 @@
 		      <div class="card-body">
 		        <h6 class="card-title">
 			        <a href="https://www.msit.go.kr/ssm/file/contentsFileDown.do?seqEncpt=10">
-			        2013정보목록 다운로드  <img alt="" src="${path1 }/resources/data/download_black.svg">
+			        2013 정보목록 다운로드  <img alt="" src="${path1 }/resources/data/download_black.svg">
 			        </a>			        
 		        </h6>
 		      </div>

@@ -1,0 +1,44 @@
+package kr.go.msit.model;
+
+import java.util.List;
+
+import org.apache.ibatis.session.SqlSession;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Repository;
+
+import kr.go.msit.dto.Board2DTO;
+import kr.go.msit.dto.BoardDTO;
+
+@Repository
+public class BoardDAO2Impl implements BoardDAO2{
+
+	@Autowired
+	private SqlSession sqlSession;
+
+	@Override
+	public List<Board2DTO> boardList() throws Exception {
+		return sqlSession.selectList("board2.boardList");
+	}
+	
+	@Override
+	public Board2DTO boardDetail(int seq) throws Exception {
+		sqlSession.update("board2.countUp", seq);
+		return sqlSession.selectOne("board2.boardDetail", seq);
+	}	
+	
+	@Override
+	public void boardInsert(Board2DTO dto) throws Exception {
+		sqlSession.insert("board2.boardInsert", dto);
+	}
+	
+	@Override
+	public void boardDelete(int seq) throws Exception {
+		sqlSession.delete("board2.boardDelete", seq);		
+	}
+	
+	@Override
+	public void boardEdit(Board2DTO dto) throws Exception {
+		sqlSession.update("board2.boardEdit", dto);
+	}
+
+}
