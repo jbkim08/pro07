@@ -74,4 +74,4 @@ rec int
 
 drop table free;
 
-select * from free;
+select * from free;custom

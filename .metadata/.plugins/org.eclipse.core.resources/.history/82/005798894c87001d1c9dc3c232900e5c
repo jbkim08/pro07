@@ -1,5 +1,0 @@
-package kr.go.msit.service;
-
-public interface MemberService {
-
-}
