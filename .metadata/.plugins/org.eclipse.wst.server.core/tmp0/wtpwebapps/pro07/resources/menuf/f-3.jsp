@@ -31,7 +31,7 @@
 </header>
 
 <div class="container">
-	<h1>소관업무</h1>
+	<h1>MI소개</h1>
 	<hr>
 	
 	<div class="media">

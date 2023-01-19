@@ -922,11 +922,12 @@ padding: 24px; border:2px solid #eee; height:600px; overflow-y:auto; }
 		<label for="ck_item2" class="form-check-label">개인정보처리방침에 동의</label><br><br>
 	</div><br><hr><br>
 	<div class="form-check">
+		<input type="checkbox" id="ck_item3" name="ck_item3" class="form-check-input">	
 		<label for="ck_item3" onclick="protocol()" class="form-check-label"><strong>전체 약관에 동의</strong></label>
 	</div>
 	<br><hr><br>	
 	<div class="btn-group">
-		<button type="button" id="in_btn1" class="button is-info">다음 단계</button>
+		<button type="button" id="in_btn1" class="btn btn-info">다음 단계</button>
 	</div>
 	<script>
 	var ck_item1 = document.getElementById("ck_item1");

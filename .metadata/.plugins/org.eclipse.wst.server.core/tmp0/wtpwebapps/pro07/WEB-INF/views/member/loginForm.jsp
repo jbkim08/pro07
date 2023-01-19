@@ -51,7 +51,11 @@
 				</tr>
 				<tr>
 					<th>비밀번호</th>
-					<td><input type="password" name="pw" id="pw" placeholder="비밀번호 입력" class="form-control" required /></td>
+					<td>
+						<div class="form-row">					
+							<input type="password" name="pw" id="pw" placeholder="비밀번호 입력" class="form-control" required />
+						</div>
+					</td>
 				</tr>
 				
 			</tbody>

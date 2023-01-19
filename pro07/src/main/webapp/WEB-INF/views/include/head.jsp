@@ -25,6 +25,8 @@
 	.page2 { width: 1200px; margin: 0 auto; margin-top: 60px; }
 	.page2-text { font-weight: 600;}
 	
+	.card-deck { margin-bottom: 20px;}
+	
 	
 	.nav { padding-left:200px;}
 	#footercard { padding-top: 18px; padding-left: 11px; background-color: #f8f9fa; }
