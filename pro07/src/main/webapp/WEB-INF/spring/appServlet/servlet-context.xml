@@ -44,7 +44,7 @@
 	
 	<!-- 멀티파트 업로드 디렉토리 지정 -->
 	<beans:bean id="uploadPath" class="java.lang.String">
-		<beans:constructor-arg value="D:\eugene\pro07\pro07\src\main\webapp\resources\upload"></beans:constructor-arg>
+		<beans:constructor-arg value="C:\Java\workspace-legacy\pro07\src\main\webapp\resources\upload"></beans:constructor-arg>
 	</beans:bean>
 	
 	<context:component-scan base-package="kr.go.msit" />
