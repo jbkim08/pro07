@@ -1,7 +1,7 @@
 create database goverment;
 
 use goverment;
-commit;
+
 create table sample(id varchar(20), pw varchar(20));
 
 insert into sample values('keg','1234');
@@ -53,12 +53,6 @@ nickname varchar(20),
 regdate datetime default now(), 
 visited int);
 
-select * from board;
-select * from work;
-select * from hire;
-
-drop table board3;
-
 insert into board values((select ifnull(max(seq), 0)+1 from board), '샘플 글 제목2','여기는 샘플2 내용입니다.','admin','2022-11-23', 0);
 
 -- 파일 첨부가 가능한 자유 게시판
@@ -72,6 +66,4 @@ id varchar(20) not null,
 rec int
 );
 
-drop table free;
 
-select * from free;custom
